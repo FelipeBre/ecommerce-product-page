@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <header class="container">
+        <div class="painel">
+            <span class="logo" aria-label="Logo">
+                <img src="images/logo.svg" alt="Logo">
+            </span>
+
+            <button type="button" aria-label="Abrir menu"></button>
+
+            <nav class="links" aria-label="Menu principal">
+                <div class="listas">
+                    <a href="#">Collections</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+
+            <div class="painel-carrinho">
+                <button type="button" class="cart-btn" aria-label="carrinho">
+                    <img src="images/icon-cart.svg" alt="Ícone do carrinho">
+                    <span class="cart-badge">0</span>
+                </button>
+
+                <button type="button" class="perfil-foto" aria-label="perfil">
+                    <img src="images/image-avatar.png" alt="Perfil">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <hr class="divisao">
+
+    <main class="produtos container">
+        <section class="galery" aria-label="Galeria de imagens do produto">
+            <div class="main-image">
+                <img src="images/image-product-1.jpg" alt="Imagem do produto principal" class="active">
+            </div>
+
+            <div class="thumbnails">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Imagem do produto 1" class="active">
+                <img src="images/image-product-2-thumbnail.jpg" alt="Imagem do produto 2">
+                <img src="images/image-product-3-thumbnail.jpg" alt="Imagem do produto 3">
+                <img src="images/image-product-4-thumbnail.jpg" alt="Imagem do produto 4">
+            </div>
+        </section>
+
+        <section class="produto-info">
+            <p>SNEAKER COMPANY</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+
+            <div class="price-box">
+                <span class="price">R$ 125.00</span>
+                <span class="descont">50%</span>
+                <div class="old-price">R$ 250.00</div>
+            </div>
+
+            <div class="controls">
+                <div class="quantity-selector">
+                    <button type="button" class="btn-qty" aria-label="Diminuir quantidade">-</button>
+                    <span class="qty-value">0</span>
+                    <button type="button" class="btn-qty" aria-label="Aumentar quantidade">+</button>
+                </div>
+
+                <button type="button" class="add-cart">
+                    🛒 Add to cart
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
